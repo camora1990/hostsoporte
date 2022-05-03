@@ -1,7 +1,14 @@
-
+import { Nav } from "./components/ui/Nav";
+import "./App.css";
+import { InicioScreen } from "./components/InicioScreen";
+import { Footer } from "./components/ui/Footer";
 function App() {
   return (
-   <h1>hostosoporte</h1>
+    <>
+      <Nav />
+      <InicioScreen />
+      <Footer />
+    </>
   );
 }
 
