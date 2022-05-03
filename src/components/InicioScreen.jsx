@@ -1,6 +1,6 @@
 import { Carousel } from "antd";
 import React, { useLayoutEffect } from "react";
-import "./InicioScreen.css";
+import "./InicioScreen.scss";
 const contentStyle = {
   height: "350px",
   color: "#fff",
@@ -40,7 +40,7 @@ export const InicioScreen = () => {
             <button id="custom-button">Contacto</button>
           </a>
         </div>
-        <div className="col-12 col-lg-7">
+        <div className="col-12 col-lg-7 mt-2">
           <Carousel autoplay={true}>
             <div>
               <h3 style={contentStyle}>imagen #1</h3>

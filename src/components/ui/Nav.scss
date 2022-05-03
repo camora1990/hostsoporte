@@ -1,12 +1,14 @@
+@import "../../style/global.scss";
+
 nav {
-  box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 50%);
+  @include generar-box-shadow($color-oscuro)
 }
 #navMenu > span {
   display: block;
   width: 28px;
   height: 2px;
   border-radius: 9999px;
-  background-color: #fff;
+  background-color: $color-claro;
 }
 
 #navMenu {
@@ -50,13 +52,13 @@ nav {
 
 
 .nav-link {
-  color: #a7a7a7;
+  color: $color-secundario;
   margin: 0 10px 0 10px;
 }
 
 .nav-link:hover {
-  border-bottom: 1px solid #f8b00c;
-  color: #a7a7a7;
+  border-bottom: 1px solid $color-principal;
+  color: $color-secundario;
 }
 .nav-soporte:hover{
   border-bottom: none

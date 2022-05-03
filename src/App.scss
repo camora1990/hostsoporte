@@ -1,23 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
-
-body {
-  font-family: "Titillium Web", sans-serif;
-  background-color: #ede9e9;
+@import "./style/global.scss";
+html {
+  height: 100%;
 }
+body {
+  height: 100%;
+  font-family: $principal-font-family;
+  @include linear-gradiente-fondo;
+}
+
+
 
 #custom-button {
   padding: 10px;
-  border: 2px solid #f8b00c;
+  border: 2px solid $color-principal;
   position: relative;
   overflow: hidden;
   background-color: transparent;
   text-align: center;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: $letra-normal;
   transition: 0.3s;
   z-index: 1;
   font-family: inherit;
-  color: #f8b00c;
+  color: $color-principal;
   opacity: 0.75;
 }
 
@@ -29,7 +34,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-  background: #f8b00c;
+  background: $color-principal;
   transition: 0.5s ease;
   display: block;
   z-index: -1;
@@ -40,6 +45,5 @@ body {
 }
 
 #custom-button:hover {
-  color: #fff;
+  color: $color-claro;
 }
-

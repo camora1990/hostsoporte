@@ -1,11 +1,13 @@
+@import "../style/global.scss";
+
 .hero h1 {
   font-weight: 800;
   position: relative;
-  color: #f8b00c;
+  color: $color-principal;
 }
 
 .hero p {
-  color: #a7a7a7;
+  color: $color-secundario;
   font-weight: 500;
   font-size: 1.2rem;
 }
