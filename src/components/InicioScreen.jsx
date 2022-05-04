@@ -29,7 +29,7 @@ export const InicioScreen = () => {
   return (
     <div className="container mt-5">
       <div className="row">
-        <div className="col-12 col-lg-5 d-flex flex-column justify-content-center hero">
+        <div className="col-12 col-lg-5 d-flex flex-column justify-content-center hero mb-3">
           <h1>
             <span>&#160;</span>
           </h1>
@@ -40,19 +40,31 @@ export const InicioScreen = () => {
             <button id="custom-button">Contacto</button>
           </a>
         </div>
-        <div className="col-12 col-lg-7 mt-2">
-          <Carousel autoplay={true}>
-            <div>
-              <h3 style={contentStyle}>imagen #1</h3>
+        <div className="col-12 col-lg-7 py-3">
+          <Carousel className="carrusel" autoplay={true} dotPosition={"top"}>
+            <div className="w-100 carrusel-img position-relative">
+              <img src="/img1.jpg" alt="" />
+              <div className="position-absolute bottom-0 start-0 bg-dark opacity-50 py-md-2">
+                <h5 className="text-center text-light">Titulo</h5>
+                <p className="px-2 text-light">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore amet esse praesentium architecto ab beatae illum
+                  aspernatur ex voluptate omnis maiores laudantium impedit quam
+                  nemo, quod animi voluptas! Obcaecati, doloremque.
+                </p>
+              </div>
             </div>
-            <div>
-              <h3 style={contentStyle}>imagen #2</h3>
-            </div>
-            <div>
-              <h3 style={contentStyle}>imagen #3</h3>
-            </div>
-            <div>
-              <h3 style={contentStyle}>imagen #4</h3>
+            <div className="w-100 carrusel-img position-relative">
+              <img src="/img2.jpg" alt="" />
+              <div className="position-absolute bottom-0 start-0 bg-dark opacity-50 py-md-2">
+                <h5 className="text-center text-light">Titulo</h5>
+                <p className="px-2 text-light">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore amet esse praesentium architecto ab beatae illum
+                  aspernatur ex voluptate omnis maiores laudantium impedit quam
+                  nemo, quod animi voluptas! Obcaecati, doloremque.
+                </p>
+              </div>
             </div>
           </Carousel>
         </div>

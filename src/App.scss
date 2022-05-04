@@ -6,6 +6,7 @@ body {
   height: 100%;
   font-family: $principal-font-family;
   @include linear-gradiente-fondo;
+  color: $color-secundario;
 }
 
 
@@ -47,3 +48,7 @@ body {
 #custom-button:hover {
   color: $color-claro;
 }
+
+
+
+

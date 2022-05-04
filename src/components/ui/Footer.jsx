@@ -3,7 +3,7 @@ import "./Footer.scss";
 
 export const Footer = () => {
   return (
-    <footer className="bg-dark p-5 ">
+    <footer className="bg-dark p-5 mt-2">
       <div className="container text-light">
         <div className="row d-flex justify-content-evenly">
           <div className="col-12 col-lg-4">

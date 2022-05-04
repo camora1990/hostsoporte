@@ -11,3 +11,28 @@
   font-weight: 500;
   font-size: 1.2rem;
 }
+.carrusel{
+  @include border-images;
+  @include generar-box-shadow($color-oscuro)
+}
+
+.carrusel-img{
+
+  width: 100%;
+  height: 250px;
+  display: flex;
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+// @supports(object-fit: cover){
+//   .box img{
+//     height: 100%;
+//     object-fit: cover;
+//     object-position: center center;
+//   }
+// }

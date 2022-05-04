@@ -1,13 +1,11 @@
-import { Nav } from "./components/ui/Nav";
 import "./App.scss";
-import { InicioScreen } from "./components/InicioScreen";
-import { Footer } from "./components/ui/Footer";
+
+
+import { AppRouter } from "./routers/AppRouter";
 function App() {
   return (
     <>
-      <Nav />
-      <InicioScreen />
-      <Footer />
+     <AppRouter />
     </>
   );
 }
