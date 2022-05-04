@@ -1,5 +1,6 @@
 import { Carousel } from "antd";
 import React, { useLayoutEffect } from "react";
+import { NavLink } from "react-router-dom";
 import "./InicioScreen.scss";
 const contentStyle = {
   height: "350px",
@@ -36,9 +37,9 @@ export const InicioScreen = () => {
           <p className="animate__animated animate__fadeInDown">
             ¡Quiere deshacerse de los problemas tecnológicos! ¡Solo llámanos!
           </p>
-          <a>
+          <NavLink to="/contacto">
             <button id="custom-button">Contacto</button>
-          </a>
+          </NavLink>
         </div>
         <div className="col-12 col-lg-7 py-3">
           <Carousel className="carrusel" autoplay={true} dotPosition={"top"}>

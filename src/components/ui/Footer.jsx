@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./Footer.scss";
 
 export const Footer = () => {
@@ -12,9 +13,9 @@ export const Footer = () => {
               No seas tímido, cuéntanos tu proyecto y te ayudaremos a crearlo o
               a mejorarlo.
             </p>
-            <a>
+            <NavLink to="/contacto">
               <button id="custom-button">Contacto</button>
-            </a>
+            </NavLink>
           </div>
           <div className="col-12 col-lg-4">
             <h4
