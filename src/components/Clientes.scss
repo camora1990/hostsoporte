@@ -1,0 +1,35 @@
+@import "../style/global.scss";
+
+.container-img-cliente {
+  display: flex !important;
+  justify-content: center;
+  img {
+    @include generar-box-shadow($color-oscuro);
+    width: 95%;
+    // max-height: 170px;
+    // max-width: 260px;
+    background-color: white;
+    border-radius: 5px;
+   
+  }
+}
+
+.slick-dots {
+  position: relative ;
+  margin-top: 8px;
+ 
+}
+.line-indicator li{
+  // border: 2px solid black;
+  height: 15px;
+  width: 15px;
+  border-radius: 50px;
+  background-color: $color-secundario;
+}
+.line-indicator li:hover{
+  background-color: $color-principal;
+}
+
+.line-indicator li.slick-active{
+  background-color: $color-principal;
+}

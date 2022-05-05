@@ -1,14 +1,10 @@
-import { Carousel } from "antd";
+
 import React, { useLayoutEffect } from "react";
 import { NavLink } from "react-router-dom";
+import Slider from "react-slick";
+import { Clientes } from "./Clientes";
 import "./InicioScreen.scss";
-const contentStyle = {
-  height: "350px",
-  color: "#fff",
-  lineHeight: "160px",
-  textAlign: "center",
-  background: "#364d79",
-};
+
 
 export const InicioScreen = () => {
   useLayoutEffect(() => {
@@ -19,12 +15,13 @@ export const InicioScreen = () => {
     h1.innerHTML = "";
     const addText = () => {
       h1.innerHTML += title2.shift();
-      title2.length == 0 && detenerInterval();
+      title2.length === 0 && detenerInterval();
     };
     const interval = setInterval(addText, 30);
     const detenerInterval = () => {
       clearInterval(interval);
     };
+    
   }, []);
 
   return (
@@ -42,9 +39,21 @@ export const InicioScreen = () => {
           </NavLink>
         </div>
         <div className="col-12 col-lg-7 py-3">
-          <Carousel className="carrusel" autoplay={true} dotPosition={"top"}>
-            <div className="w-100 carrusel-img position-relative">
-              <img src="/img1.jpg" alt="" />
+          <Slider className="contenedor-slider"  autoplay={true} arrows={false}>
+            <div className="contenedor-slider-img position-relative" >
+              <img   src="/img1.jpg" alt="" />
+              <div className="position-absolute bottom-0 start-0 bg-dark opacity-50 py-md-2" >
+                <h5 className="text-center text-light">Titulo</h5>
+                <p className="px-2 text-light">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Inventore amet esse praesentium architecto ab beatae illum
+                  aspernatur ex voluptate omnis maiores laudantium impedit quam
+                  nemo, quod animi voluptas! Obcaecati, doloremque.
+                </p>
+              </div>
+            </div>
+            <div className="contenedor-slider-img position-relative" >
+              <img  src="/img2.jpg" alt="" />
               <div className="position-absolute bottom-0 start-0 bg-dark opacity-50 py-md-2">
                 <h5 className="text-center text-light">Titulo</h5>
                 <p className="px-2 text-light">
@@ -55,21 +64,10 @@ export const InicioScreen = () => {
                 </p>
               </div>
             </div>
-            <div className="w-100 carrusel-img position-relative">
-              <img src="/img2.jpg" alt="" />
-              <div className="position-absolute bottom-0 start-0 bg-dark opacity-50 py-md-2">
-                <h5 className="text-center text-light">Titulo</h5>
-                <p className="px-2 text-light">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Inventore amet esse praesentium architecto ab beatae illum
-                  aspernatur ex voluptate omnis maiores laudantium impedit quam
-                  nemo, quod animi voluptas! Obcaecati, doloremque.
-                </p>
-              </div>
-            </div>
-          </Carousel>
+          </Slider>
         </div>
       </div>
+      <Clientes />
     </div>
   );
 };
