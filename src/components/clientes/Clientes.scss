@@ -1,13 +1,11 @@
-@import "../style/global.scss";
+@import "../../style/global.scss";
 
 .container-img-cliente {
   display: flex !important;
   justify-content: center;
   img {
-    @include generar-box-shadow($color-oscuro);
+
     width: 95%;
-    // max-height: 170px;
-    // max-width: 260px;
     background-color: white;
     border-radius: 5px;
    
@@ -20,7 +18,7 @@
  
 }
 .line-indicator li{
-  // border: 2px solid black;
+
   height: 15px;
   width: 15px;
   border-radius: 50px;

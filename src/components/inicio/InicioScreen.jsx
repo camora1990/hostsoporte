@@ -2,20 +2,22 @@
 import React, { useLayoutEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Slider from "react-slick";
-import { Clientes } from "./Clientes";
+import { Clientes } from "../clientes/Clientes";
+import { Nosotros } from "../nosotros/Nosotros";
 import "./InicioScreen.scss";
+import { ProductosServicios } from "./ProductosServicios";
 
 
 export const InicioScreen = () => {
   useLayoutEffect(() => {
-    const title = "¡Nuestra pasión es dar futuro a tu tecnología!";
-    const title2 = [...title];
+    const titulo = "¡Nuestra pasión es dar futuro a tu tecnología!";
+    const tituloTmp = [...titulo];
     const h1 = document.querySelector(".hero h1");
 
     h1.innerHTML = "";
     const addText = () => {
-      h1.innerHTML += title2.shift();
-      title2.length === 0 && detenerInterval();
+      h1.innerHTML += tituloTmp.shift();
+      tituloTmp.length === 0 && detenerInterval();
     };
     const interval = setInterval(addText, 30);
     const detenerInterval = () => {
@@ -67,6 +69,8 @@ export const InicioScreen = () => {
           </Slider>
         </div>
       </div>
+      <Nosotros />
+      <ProductosServicios/>
       <Clientes />
     </div>
   );

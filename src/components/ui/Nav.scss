@@ -1,7 +1,9 @@
 @import "../../style/global.scss";
 
 nav {
-  @include generar-box-shadow($color-oscuro)
+  @include generar-box-shadow($color-oscuro);
+  top:0;
+  z-index: 5000;
 }
 #navMenu > span {
   display: block;
@@ -47,6 +49,8 @@ nav {
 #navMenu.active > span:nth-child(3) {
   transform: translateY(-9px) rotate(45deg);
 }
+
+
 .navbar-toggler:focus {
   box-shadow: none;
 }

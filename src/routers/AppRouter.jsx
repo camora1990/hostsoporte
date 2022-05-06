@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import React from "react";
-import { InicioScreen } from "../components/InicioScreen";
+import { InicioScreen } from "../components/inicio/InicioScreen";
 import { Nav } from "../components/ui/Nav";
 import { Footer } from "../components/ui/Footer";
 import { WhatsAppIcon } from "../components/ui/WhatsAppIcon";

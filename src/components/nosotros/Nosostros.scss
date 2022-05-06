@@ -1,0 +1,15 @@
+@import "../../style/global.scss";
+
+.nosotros {
+  @include generar-box-shadow($color-oscuro);
+  @include backGround-cards;
+  &-contenedor-imagen {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    img{
+      width: 90%;
+      height: 90%;
+    }
+  }
+}

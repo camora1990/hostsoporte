@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./Nav.scss";
 export const Nav = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fs-6">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fs-6 position-sticky">
       <div className="container-fluid container">
         <NavLink to="/" className="navbar-brand">
           <img src="/logoHostSoporte.png" alt="logoHostSoporte" />
@@ -39,19 +39,26 @@ export const Nav = () => {
               </NavLink>
             </li>
             <li className="nav-item d-flex align-items-center">
-              <a href="/#" className="nav-link">
-                Servicios{" "}
-              </a>
-            </li>
-            <li className="nav-item d-flex align-items-center">
-              <NavLink to="/nosotros" className={`nav-link ${(navData) =>
-                  navData.isActive ? "active" : ""}`}>
+              <NavLink
+                to="/nosotros"
+                className={`nav-link ${(navData) =>
+                  navData.isActive ? "active" : ""}`}
+              >
                 Sobre nosotros{" "}
               </NavLink>
             </li>
             <li className="nav-item d-flex align-items-center">
-              <NavLink to="/contacto" className={`nav-link ${(navData) =>
-                  navData.isActive ? "active" : ""}`}>
+              <a href="/#" className="nav-link">
+                Servicios{" "}
+              </a>
+            </li>
+            
+            <li className="nav-item d-flex align-items-center">
+              <NavLink
+                to="/contacto"
+                className={`nav-link ${(navData) =>
+                  navData.isActive ? "active" : ""}`}
+              >
                 Contacto{" "}
               </NavLink>
             </li>
