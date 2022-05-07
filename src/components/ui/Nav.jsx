@@ -1,12 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./Nav.scss";
+
 export const Nav = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fs-6 position-sticky">
       <div className="container-fluid container">
         <NavLink to="/" className="navbar-brand">
-          <img src="/logoHostSoporte.png" alt="logoHostSoporte" />
+          <img src="assets/images/logoHostSoporte.png" alt="logoHostSoporte" />
         </NavLink>
         <button
           className="navbar-toggler p-3"
@@ -48,11 +48,11 @@ export const Nav = () => {
               </NavLink>
             </li>
             <li className="nav-item d-flex align-items-center">
-              <a href="/#" className="nav-link">
+              <NavLink to="/servicios" className="nav-link">
                 Servicios{" "}
-              </a>
+              </NavLink>
             </li>
-            
+
             <li className="nav-item d-flex align-items-center">
               <NavLink
                 to="/contacto"

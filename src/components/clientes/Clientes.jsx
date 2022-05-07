@@ -1,11 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
 import { imagenesClientes } from "../../data/imaganesClientes";
-import "./Clientes.scss";
 export const Clientes = () => {
 
   const settings = {
-    dots: false,
     arrows:false,
     infinite: true,
     speed: 500,

@@ -1,4 +1,6 @@
-@import "../../style/global.scss";
+/*#####################################
+INÍCIA SECCIÓN COMPONENTE NOSOTROS
+#####################################*/
 
 .nosotros {
   @include generar-box-shadow($color-oscuro);
@@ -13,3 +15,7 @@
     }
   }
 }
+
+/*#####################################
+FINALIZA SECCIÓN COMPONENTE NOSTROS
+#####################################*/

@@ -1,13 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./Nosostros.scss";
+
 
 export const Nosotros = () => {
   return (
-    <section className="row mt-5  nosotros pt-4">
+    <section className="row mt-5  nosotros py-4">
       <h2 className="text-center mb-5 fw-bold">Sobre nosotros</h2>
       <div className="col-12 col-md-6 nosotros-contenedor-imagen mb-4">
-        <img src="/nosotros.svg" alt="Nosotros" />
+        <img src="assets/images/nosotros.svg" alt="Nosotros" />
       </div>
       <div className="col-12 col-md-6 d-flex flex-column justify-content-around nosotros-contenedor-descripcion">
         <p>
@@ -28,7 +28,7 @@ export const Nosotros = () => {
             <span className="ver-mas__circulo" aria-hidden="true">
               <span className="icon arrow"></span>
             </span>
-            <span className="boton-texto">Ver mas</span>
+            <span className="boton-texto">Ver más</span>
           </button>
         </NavLink>
       </div>

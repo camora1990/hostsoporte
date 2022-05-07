@@ -1,14 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./Footer.scss";
+
 
 export const Footer = () => {
   return (
-    <footer className="bg-dark p-5 mt-2">
+    <footer className="bg-dark p-md-5 mt-2">
       <div className="container text-light">
         <div className="row d-flex justify-content-evenly">
-          <div className="col-12 col-lg-4">
-            <img src="/logoHostSoporteMediano.png" alt="" />
+          <div className="col-12 col-lg-4 ">
+            <img src="assets/images/logoHostSoporteMediano.png" alt="" />
             <p className="mb-4">
               No seas tímido, cuéntanos tu proyecto y te ayudaremos a crearlo o
               a mejorarlo.

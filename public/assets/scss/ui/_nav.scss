@@ -1,4 +1,6 @@
-@import "../../style/global.scss";
+/*#####################################
+INÍCIA SECCIÓN COMPONENTE NAVBAR
+#####################################*/
 
 nav {
   @include generar-box-shadow($color-oscuro);
@@ -68,3 +70,7 @@ nav {
 .nav-soporte:hover{
   border-bottom: none
 }
+
+/*#####################################
+FINALIZA SECCIÓN COMPONENTE NAVBAR
+#####################################*/

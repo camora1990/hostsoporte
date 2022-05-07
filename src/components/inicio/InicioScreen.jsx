@@ -1,12 +1,10 @@
-
-import React, { useLayoutEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import { NavLink } from "react-router-dom";
 import Slider from "react-slick";
+import Aos from "aos";
 import { Clientes } from "../clientes/Clientes";
 import { Nosotros } from "../nosotros/Nosotros";
-import "./InicioScreen.scss";
 import { ProductosServicios } from "./ProductosServicios";
-
 
 export const InicioScreen = () => {
   useLayoutEffect(() => {
@@ -23,7 +21,10 @@ export const InicioScreen = () => {
     const detenerInterval = () => {
       clearInterval(interval);
     };
-    
+  }, []);
+
+  useEffect(() => {
+    Aos.init({ duration: 2000, once: true });
   }, []);
 
   return (
@@ -41,37 +42,49 @@ export const InicioScreen = () => {
           </NavLink>
         </div>
         <div className="col-12 col-lg-7 py-3">
-          <Slider className="contenedor-slider"  autoplay={true} arrows={false}>
-            <div className="contenedor-slider-img position-relative" >
-              <img   src="/img1.jpg" alt="" />
-              <div className="position-absolute bottom-0 start-0 bg-dark opacity-50 py-md-2" >
-                <h5 className="text-center text-light">Titulo</h5>
-                <p className="px-2 text-light">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Inventore amet esse praesentium architecto ab beatae illum
-                  aspernatur ex voluptate omnis maiores laudantium impedit quam
-                  nemo, quod animi voluptas! Obcaecati, doloremque.
-                </p>
+          <div data-aos="fade-left">
+            <Slider
+              className="contenedor-slider"
+              autoplay={true}
+              arrows={false}
+            >
+              <div className="contenedor-slider-img position-relative">
+                <img src="assets/images/img1.jpg" alt="" />
+                <div className="position-absolute bottom-0 start-0 bg-dark opacity-50 py-md-2">
+                  <h5 className="text-center text-light">Titulo</h5>
+                  <p className="px-2 text-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore amet esse praesentium architecto ab beatae illum
+                    aspernatur ex voluptate omnis maiores laudantium impedit
+                    quam nemo, quod animi voluptas! Obcaecati, doloremque.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="contenedor-slider-img position-relative" >
-              <img  src="/img2.jpg" alt="" />
-              <div className="position-absolute bottom-0 start-0 bg-dark opacity-50 py-md-2">
-                <h5 className="text-center text-light">Titulo</h5>
-                <p className="px-2 text-light">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Inventore amet esse praesentium architecto ab beatae illum
-                  aspernatur ex voluptate omnis maiores laudantium impedit quam
-                  nemo, quod animi voluptas! Obcaecati, doloremque.
-                </p>
+              <div className="contenedor-slider-img position-relative">
+                <img src="assets/images/img2.jpg" alt="" />
+                <div className="position-absolute bottom-0 start-0 bg-dark opacity-50 py-md-2">
+                  <h5 className="text-center text-light">Titulo</h5>
+                  <p className="px-2 text-light">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Inventore amet esse praesentium architecto ab beatae illum
+                    aspernatur ex voluptate omnis maiores laudantium impedit
+                    quam nemo, quod animi voluptas! Obcaecati, doloremque.
+                  </p>
+                </div>
               </div>
-            </div>
-          </Slider>
+            </Slider>
+          </div>
         </div>
       </div>
-      <Nosotros />
-      <ProductosServicios/>
-      <Clientes />
+      <div data-aos="fade-left">
+        <Nosotros />
+      </div>
+      <div data-aos="slide-right">
+        <ProductosServicios />
+      </div>
+      <div data-aos="fade-down">
+        <Clientes />
+      </div>
     </div>
   );
 };

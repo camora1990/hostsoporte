@@ -1,5 +1,5 @@
 import React from "react";
-import "./WhatsAppIcon.scss";
+
 export const WhatsAppIcon = () => {
   return (
     <div className="position-fixed top-50 end-0 me-lg-4" style={{zIndex:5000}}>

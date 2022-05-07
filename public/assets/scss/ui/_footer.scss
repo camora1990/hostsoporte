@@ -1,8 +1,7 @@
-@import "../../style/global.scss";
+/*#####################################
+INÍCIA SECCIÓN COMPONENTE FOOTER
+#####################################*/
 
-li {
-  list-style: none;
-}
 
 footer ul li {
   width: 45px;
@@ -57,3 +56,7 @@ footer ul li:hover .fa-instagram {
     text-shadow: 0 0 15px $color-icono-instagram;
     transition: all 0.5s ease;
   }
+
+/*#####################################
+FINALIZA SECCIÓN COMPONENTE FOOTER
+#####################################*/
