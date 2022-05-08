@@ -6,6 +6,7 @@ import { Nav } from "../components/ui/Nav";
 import { Footer } from "../components/ui/Footer";
 import { WhatsAppIcon } from "../components/ui/WhatsAppIcon";
 import { NotFound } from "../components/NotFound";
+import { NostrosScreen } from "../components/nosotros/NostrosScreen";
 
 
 export const AppRouter = () => {
@@ -17,6 +18,7 @@ export const AppRouter = () => {
           <WhatsAppIcon />
           <Routes>
             <Route path="/" element={<InicioScreen />} />
+            <Route path="/Nosotros" element={<NostrosScreen />} />
             <Route path="/*" element={<NotFound/>}/>
           </Routes>
         </div>

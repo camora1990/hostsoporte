@@ -77,7 +77,7 @@ export const InicioScreen = () => {
         </div>
       </div>
       <div data-aos="fade-left">
-        <Nosotros />
+        <Nosotros mostrar={true}/>
       </div>
       <div data-aos="slide-right">
         <ProductosServicios />

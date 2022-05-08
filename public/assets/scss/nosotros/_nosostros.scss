@@ -9,10 +9,21 @@ INÍCIA SECCIÓN COMPONENTE NOSOTROS
     height: 100%;
     display: flex;
     justify-content: center;
-    img{
+    img {
       width: 90%;
       height: 90%;
     }
+  }
+  .descripcion-nosotros {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+  }
+  a {
+    color: $color-principal;
   }
 }
 
