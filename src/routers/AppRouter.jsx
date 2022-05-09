@@ -17,8 +17,9 @@ export const AppRouter = () => {
         <div className="container">
           <WhatsAppIcon />
           <Routes>
+            <Route path="/hostsoporte/" element={<InicioScreen />} />
             <Route path="/" element={<InicioScreen />} />
-            <Route path="/Nosotros" element={<NostrosScreen />} />
+            <Route path="/hostsoporte/Nosotros" element={<NostrosScreen />} />
             <Route path="/*" element={<NotFound/>}/>
           </Routes>
         </div>
