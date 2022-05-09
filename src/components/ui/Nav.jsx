@@ -14,7 +14,7 @@ export const Nav = () => {
           to="/"
           className={` ${(navData) => (navData.isActive ? "" : "")}`}
         >
-          <img src="assets/images/logoHostSoporte.png" alt="logoHostSoporte" />
+          <img src="./assets/images/logoHostSoporte.png" alt="logoHostSoporte" />
         </NavLink>
         <button
           className="navbar-toggler p-3"

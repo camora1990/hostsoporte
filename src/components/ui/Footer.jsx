@@ -1,14 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-
 export const Footer = () => {
   return (
     <footer className="bg-dark p-md-5 mt-2">
       <div className="container text-light">
         <div className="row d-flex justify-content-evenly">
           <div className="col-12 col-lg-4 ">
-            <img src="assets/images/logoHostSoporteMediano.png" alt="" />
+            <img src="./assets/images/logoHostSoporteMediano.png" alt="" />
             <p className="mb-4">
               No seas tímido, cuéntanos tu proyecto y te ayudaremos a crearlo o
               a mejorarlo.
@@ -40,7 +39,6 @@ export const Footer = () => {
               <i className="fa-solid fa-phone m-2"></i>
               <span>3188267630/3188267628</span>
             </div>
-            
           </div>
           <hr className="mt-3" />
           <div className="row mt-2">
@@ -56,12 +54,12 @@ export const Footer = () => {
                   </a>
                 </li>
                 <li className="twitter">
-                  <a href="">
+                  <a href="https://twitter.com/?lang=es" target={"_blank"}>
                     <i className="fa fa-twitter fa-1x"></i>
                   </a>
                 </li>
                 <li className="instagram">
-                  <a href="">
+                  <a href="https://www.instagram.com/" target={"_blank"}>
                     <i className="fa fa-instagram fa-1x"></i>
                   </a>
                 </li>
