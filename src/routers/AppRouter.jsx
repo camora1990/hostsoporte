@@ -19,7 +19,7 @@ export const AppRouter = () => {
           <Routes>
             <Route path="/hostsoporte/" element={<InicioScreen />} />
             <Route path="/" element={<InicioScreen />} />
-            <Route path="/Nosotros" element={<NostrosScreen />} />
+            <Route path="/nosotros" element={<NostrosScreen />} />
             <Route path="/*" element={<NotFound/>}/>
           </Routes>
         </div>
