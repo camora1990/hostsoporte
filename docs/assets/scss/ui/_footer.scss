@@ -1,0 +1,62 @@
+/*#####################################
+INÍCIA SECCIÓN COMPONENTE FOOTER
+#####################################*/
+
+
+footer ul li {
+  width: 45px;
+  height: 45px;
+  margin: 0 5px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid $color-secundario;
+
+  transition: all 0.5s ease;
+}
+
+footer ul li .fa {
+  color: $color-secundario;
+  margin-top: 10px;
+  transition: all 0.5s ease;
+}
+
+footer ul li:hover.facebook {
+  border: 5px solid $color-icono-facebook;
+  box-shadow: 0 0 15px $color-icono-facebook;
+  transition: all 0.5s ease;
+}
+
+footer ul li:hover .fa-facebook {
+  color: $color-icono-facebook;
+  text-shadow: 0 0 15px $color-icono-facebook;
+  transition: all 0.5s ease;
+}
+
+footer ul li:hover.twitter {
+  border: 5px solid $color-icono-twitter;
+  box-shadow: 0 0 15px $color-icono-twitter;
+  transition: all 0.5s ease;
+}
+
+footer ul li:hover .fa-twitter {
+  color: $color-icono-twitter;
+  text-shadow: 0 0 15px $color-icono-twitter;
+  transition: all 0.5s ease;
+}
+
+footer ul li:hover.instagram {
+  border: 5px solid $color-icono-instagram;
+  box-shadow: 0 0 15px $color-icono-instagram;
+  transition: all 0.5s ease;
+}
+
+footer ul li:hover .fa-instagram {
+    color: $color-icono-instagram;
+    text-shadow: 0 0 15px $color-icono-instagram;
+    transition: all 0.5s ease;
+  }
+
+/*#####################################
+FINALIZA SECCIÓN COMPONENTE FOOTER
+#####################################*/
