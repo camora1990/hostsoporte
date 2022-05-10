@@ -5,6 +5,7 @@ import Aos from "aos";
 import { Clientes } from "../clientes/Clientes";
 import { Nosotros } from "../nosotros/Nosotros";
 import { ProductosServicios } from "./ProductosServicios";
+import { scrollTop } from "../../helpers/scrollTop";
 
 export const InicioScreen = () => {
   useLayoutEffect(() => {
@@ -24,6 +25,7 @@ export const InicioScreen = () => {
   }, []);
 
   useEffect(() => {
+    scrollTop()
     Aos.init({ duration: 2000, once: true });
   }, []);
 

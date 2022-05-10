@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export const Nosotros = ({ mostrar }) => {
   return (
-    <section className="row mt-5  nosotros py-4 px-3">
+    <section data-aos="fade" className="row mt-5  nosotros py-4 px-3 ">
       <h2 className="text-center mb-5 fw-bold">Sobre nosotros</h2>
       <div className="col-12 col-md-6 nosotros-contenedor-imagen mb-4">
         <img src="./assets/images/nosotros1.svg" alt="Nosotros" />
