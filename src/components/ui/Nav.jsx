@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const Nav = () => {
   const menuRef = useRef();
-  const prueba = (navData) => {
-    debugger;
-    console.log(navData);
+
+  const handleClick = () => {
+    menuRef.current.ariaExpanded === "true" && menuRef.current.click();
   };
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fs-6 position-sticky">
@@ -13,6 +13,7 @@ export const Nav = () => {
         <NavLink
           to="/hostsoporte/"
           className={` ${(navData) => (navData.isActive ? "" : "")}`}
+          onClick={handleClick}
         >
           <img
             src="./assets/images/logoHostSoporte.png"
@@ -41,10 +42,10 @@ export const Nav = () => {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item  d-lg-flex align-items-lg-center ">
               <NavLink
-                
                 to="/hostsoporte/"
                 className={`nav-link ${(navData) =>
                   navData.isActive ? "active" : ""}`}
+                onClick={handleClick}
               >
                 Inicio
               </NavLink>
@@ -54,18 +55,24 @@ export const Nav = () => {
                 to="/hostsoporte/nosotros"
                 className={`nav-link ${(navData) =>
                   navData.isActive ? "active" : ""}`}
+                onClick={handleClick}
               >
                 Sobre nosotros{" "}
               </NavLink>
             </li>
             <li className="nav-item dropdown d-lg-flex align-items-lg-center">
-              <NavLink className={`nav-link dropdown-toggle`} to="/hostsoporte/servicios">
+              <NavLink
+                onClick={handleClick}
+                className={`nav-link dropdown-toggle`}
+                to="/hostsoporte/servicios"
+              >
                 Servicios
               </NavLink>
               <ul className="dropdown-menu bg-dark">
                 <div className="fondo-menu">
                   <li>
                     <NavLink
+                      onClick={handleClick}
                       to="/hostsoporte/servicios/detalle-1/#1"
                       className={`dropdown-item ${(navData) =>
                         navData.isActive ? "active" : ""}`}
@@ -75,6 +82,7 @@ export const Nav = () => {
                   </li>
                   <li>
                     <NavLink
+                      onClick={handleClick}
                       to="/hostsoporte/servicios/detalle-2/#2"
                       className={`dropdown-item ${(navData) =>
                         navData.isActive ? "active" : ""}`}
@@ -84,6 +92,7 @@ export const Nav = () => {
                   </li>
                   <li>
                     <NavLink
+                      onClick={handleClick}
                       to="/hostsoporte/servicios/detalle-3/#3"
                       className={`dropdown-item ${(navData) =>
                         navData.isActive ? "active" : ""}`}
@@ -94,6 +103,7 @@ export const Nav = () => {
                   <li></li>
                   <li>
                     <NavLink
+                      onClick={handleClick}
                       to="/hostsoporte/servicios/detalle-4/#4"
                       className={`dropdown-item ${(navData) =>
                         navData.isActive ? "active" : ""}`}
@@ -103,6 +113,7 @@ export const Nav = () => {
                   </li>
                   <li>
                     <NavLink
+                      onClick={handleClick}
                       to="/hostsoporte/servicios/detalle-5/#5"
                       className={`dropdown-item ${(navData) =>
                         navData.isActive ? "active" : ""}`}
@@ -112,6 +123,7 @@ export const Nav = () => {
                   </li>
                   <li>
                     <NavLink
+                      onClick={handleClick}
                       to="/hostsoporte/servicios/detalle-6/#6"
                       className={`dropdown-item ${(navData) =>
                         navData.isActive ? "active" : ""}`}
@@ -124,6 +136,7 @@ export const Nav = () => {
             </li>
             <li className="nav-item dropdown d-lg-flex align-items-lg-center ">
               <NavLink
+                onClick={handleClick}
                 className={`nav-link dropdown-toggle ${(navData) =>
                   navData.isActive ? "active" : ""}`}
                 to="/hostsoporte/productos"
@@ -135,6 +148,7 @@ export const Nav = () => {
                 <div className="fondo-menu">
                   <li>
                     <NavLink
+                      onClick={handleClick}
                       to="/hostsoporte/productos/detalle-1/#1"
                       className={`dropdown-item ${(navData) =>
                         navData.isActive ? "active" : ""}`}
@@ -144,6 +158,7 @@ export const Nav = () => {
                   </li>
                   <li>
                     <NavLink
+                      onClick={handleClick}
                       to="/hostsoporte/productos/detalle-2/#2"
                       className={`dropdown-item ${(navData) =>
                         navData.isActive ? "active" : ""}`}
@@ -153,6 +168,7 @@ export const Nav = () => {
                   </li>
                   <li>
                     <NavLink
+                      onClick={handleClick}
                       to="/hostsoporte/productos/detalle-3/#3"
                       className={`dropdown-item ${(navData) =>
                         navData.isActive ? "active" : ""}`}
@@ -166,6 +182,7 @@ export const Nav = () => {
 
             <li className="nav-item  d-lg-flex align-items-lg-center">
               <NavLink
+                onClick={handleClick}
                 to="/hostsoporte/contacto"
                 className={`nav-link ${(navData) =>
                   navData.isActive ? "active" : ""}`}

@@ -37,7 +37,7 @@ export const InicioScreen = () => {
           <p className="animate__animated animate__fadeInDown">
             ¡Quiere deshacerse de los problemas tecnológicos! ¡Solo llámanos!
           </p>
-          <NavLink to="/hostsoporte/contacto">
+          <NavLink  to="/hostsoporte/contacto">
             <button id="custom-button">Contacto</button>
           </NavLink>
         </div>
