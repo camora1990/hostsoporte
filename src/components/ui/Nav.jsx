@@ -15,7 +15,7 @@ export const Nav = () => {
           className={` ${(navData) => (navData.isActive ? "" : "")}`}
         >
           <img
-            src="/assets/images/logoHostSoporte.png"
+            src="./assets/images/logoHostSoporte.png"
             alt="logoHostSoporte"
           />
         </NavLink>

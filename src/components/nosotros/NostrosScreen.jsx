@@ -9,7 +9,7 @@ export const NostrosScreen = () => {
         <div className="row mt-3 p-3">
           <h3 className="text-center fw-bold">MISIÓN</h3>
           <div className="coprporativo-imagen col-12 col-md-4 mt-3 d-flex justify-content-center">
-            <img src="/assets/images/mision.svg" alt="mision" />
+            <img src="./assets/images/mision.svg" alt="mision" />
           </div>
           <div className="corporativo-descrpcion col-12 col-md-8 mt-3 d-flex align-items-center">
             <p>
@@ -23,7 +23,7 @@ export const NostrosScreen = () => {
         <div className="row mt-3 d-flex flex-md-row-reverse p-3">
           <h3 className="text-center fw-bold">VISIÓN</h3>
           <div className="coprporativo-imagen col-12 col-md-4 mt-3 d-flex justify-content-center">
-            <img src="/assets/images/vision.svg" alt="vision" />
+            <img src="./assets/images/vision.svg" alt="vision" />
           </div>
           <div className="corporativo-descrpcion col-12 col-md-8 mt-3 d-flex align-items-center">
             <p>
@@ -39,7 +39,7 @@ export const NostrosScreen = () => {
         <div className="row mt-3 p-3">
           <h3 className="text-center fw-bold">PRINCIPIOS Y VALORES</h3>
           <div className="coprporativo-imagen col-12 col-md-4 mt-3 d-flex justify-content-center">
-            <img src="/assets/images/politicas.svg" alt="mision" />
+            <img src="./assets/images/politicas.svg" alt="mision" />
           </div>
           <div className="corporativo-descrpcion col-12 col-md-8 mt-3 d-flex align-items-center">
             <p>
