@@ -37,7 +37,7 @@ export const InicioScreen = () => {
           <p className="animate__animated animate__fadeInDown">
             ¡Quiere deshacerse de los problemas tecnológicos! ¡Solo llámanos!
           </p>
-          <NavLink to="/contacto">
+          <NavLink to="/hostsoporte/contacto">
             <button id="custom-button">Contacto</button>
           </NavLink>
         </div>
@@ -49,7 +49,7 @@ export const InicioScreen = () => {
               arrows={false}
             >
               <div className="contenedor-slider-img position-relative">
-                <img src="./assets/images/img1.jpg" alt="" />
+                <img src="/assets/images/img1.jpg" alt="" />
                 <div className="position-absolute bottom-0 start-0 bg-dark opacity-50 py-md-2">
                   <h5 className="text-center text-light">Titulo</h5>
                   <p className="px-2 text-light">
@@ -61,7 +61,7 @@ export const InicioScreen = () => {
                 </div>
               </div>
               <div className="contenedor-slider-img position-relative">
-                <img src="./assets/images/img2.jpg" alt="" />
+                <img src="/assets/images/img2.jpg" alt="" />
                 <div className="position-absolute bottom-0 start-0 bg-dark opacity-50 py-md-2">
                   <h5 className="text-center text-light">Titulo</h5>
                   <p className="px-2 text-light">

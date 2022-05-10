@@ -6,7 +6,7 @@ export const Nosotros = ({ mostrar }) => {
     <section className="row mt-5  nosotros py-4 px-3">
       <h2 className="text-center mb-5 fw-bold">Sobre nosotros</h2>
       <div className="col-12 col-md-6 nosotros-contenedor-imagen mb-4">
-        <img src="./assets/images/nosotros1.svg" alt="Nosotros" />
+        <img src="/assets/images/nosotros1.svg" alt="Nosotros" />
       </div>
       <div className="col-12 col-md-6 d-flex flex-column justify-content-around nosotros-contenedor-descripcion">
         <div className={`${mostrar ? "descripcion-nosotros" : ""}`}>
@@ -38,7 +38,7 @@ export const Nosotros = ({ mostrar }) => {
             comunicaciones unificadas,{" "}
             <strong>
               <span>
-                <NavLink to="/servicios">aquí</NavLink>
+                <NavLink to="/hostsoporte/servicios">aquí</NavLink>
               </span>
             </strong>{" "}
             puedes conocer más acerca de nuestros servicios.
@@ -46,7 +46,7 @@ export const Nosotros = ({ mostrar }) => {
         </div>
 
         {mostrar && (
-          <NavLink className="mt-3" to="/nosotros">
+          <NavLink className="mt-3" to="/hostsoporte/nosotros">
             <button className="ver-mas" id="btn-ver-mas">
               <span className="ver-mas__circulo" aria-hidden="true">
                 <span className="icon arrow"></span>

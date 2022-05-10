@@ -9,7 +9,7 @@ export const ProductosServicios = () => {
         <div className="servicios col-12 col-md-4 py-4">
           <h3 className="fw-bold text-center mt-3">Productos </h3>{" "}
           <div className="detalles-servicios w-100 mt-4 d-flex flex-column align-items-center justify-content-center">
-            <img src="./assets/images/productos.svg" alt="productos" />
+            <img src="/assets/images/productos.svg" alt="productos" />
             <div className="productos-servicios__descripcion mt-3">
               <p>
                 Contamos con la comercialización y distribución de computadores
@@ -21,7 +21,7 @@ export const ProductosServicios = () => {
             </div>
           </div>
           <div className="mt-3 w-100 d-flex justify-content-center">
-            <NavLink to="/productos">
+            <NavLink to="/hostsoporte/productos">
               <button className="ver-mas" id="btn-ver-mas">
                 <span className="ver-mas__circulo" aria-hidden="true">
                   <span className="icon arrow"></span>
@@ -34,7 +34,7 @@ export const ProductosServicios = () => {
         <div className="productos col-12 col-md-4 py-4">
           <h3 className="fw-bold text-center mt-3">Servicios </h3>{" "}
           <div className="detalles-productos w-100 mt-4 d-flex flex-column align-items-center justify-content-center">
-            <img src="./assets/images/servicios1.svg" alt="servicios" />
+            <img src="/assets/images/servicios1.svg" alt="servicios" />
             <div className="productos-servicios__descripcion mt-3">
               <p>
                 Ofrecemos soluciones oportunas de requerimientos e incidencias
@@ -49,7 +49,7 @@ export const ProductosServicios = () => {
             </div>
           </div>
           <div className="mt-3 w-100 d-flex justify-content-center">
-            <NavLink to="/servicios">
+            <NavLink to="/hostsoporte/servicios">
               <button className="ver-mas" id="btn-ver-mas">
                 <span className="ver-mas__circulo" aria-hidden="true">
                   <span className="icon arrow"></span>
@@ -62,7 +62,7 @@ export const ProductosServicios = () => {
         <div className="aliados col-12 col-md-4 py-4">
           <h3 className="fw-bold text-center mt-3">Aliados </h3>{" "}
           <div className="detalles-aliados w-100 mt-4 d-flex flex-column align-items-center justify-content-center">
-            <img src="./assets/images/aliados2.svg" alt="aliados" />
+            <img src="/assets/images/aliados2.svg" alt="aliados" />
             <div className="productos-servicios__descripcion mt-3">
               <p>
                 Gracias a la alianza de <strong>HOST </strong>con{" "}
@@ -73,7 +73,7 @@ export const ProductosServicios = () => {
             </div>
           </div>
           <div className="mt-3 w-100 d-flex justify-content-center">
-            <NavLink to="/electronica87">
+            <NavLink to="/hostsoporte/electronica87">
               <button className="ver-mas" id="btn-ver-mas">
                 <span className="ver-mas__circulo" aria-hidden="true">
                   <span className="icon arrow"></span>
