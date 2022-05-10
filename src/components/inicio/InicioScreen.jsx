@@ -25,8 +25,8 @@ export const InicioScreen = () => {
   }, []);
 
   useEffect(() => {
-    scrollTop()
-    Aos.init({ duration: 2000, once: true });
+    scrollTop();
+    Aos.init({ duration: 2000, once: true, disable: "mobile" });
   }, []);
 
   return (
@@ -39,7 +39,7 @@ export const InicioScreen = () => {
           <p className="animate__animated animate__fadeInDown">
             ¡Quiere deshacerse de los problemas tecnológicos! ¡Solo llámanos!
           </p>
-          <NavLink  to="/hostsoporte/contacto">
+          <NavLink to="/hostsoporte/contacto">
             <button id="custom-button">Contacto</button>
           </NavLink>
         </div>
@@ -79,7 +79,7 @@ export const InicioScreen = () => {
         </div>
       </div>
       <div data-aos="fade-left">
-        <Nosotros mostrar={true}/>
+        <Nosotros mostrar={true} />
       </div>
       <div data-aos="slide-right">
         <ProductosServicios />
